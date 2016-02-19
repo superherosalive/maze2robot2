@@ -15,6 +15,9 @@ class ControlCenter {
       
     // You may want to paste your Part 1 implementation of moveComplexRobot() here
         
+        let robotIsBlocked = isFacingWall(myRobot, direction: myRobot.direction)
+
+        
         // Step 2.1c
         // TODO: Save the return value of checkWalls() to a constant called myWallInfo.
         
