@@ -60,14 +60,25 @@ extension ControlCenter {
         // Step 2.1a
         // TODO: Check if there is a wall at the bottom of the current cell
         
+        let isWallDown = cell.bottom
+        if isWallDown {
+            numberOfWalls++
+        }
+
+        
         // TODO: Check if there is a wall to the left of the current cell
         
+        let isWallLeft = cell.left
+        if isWallLeft {
+            numberOfWalls++
+        }
+
         
         // Step 2.1b
         // TODO: Test the checkWalls function.
         
         // TODO: Return a tuple representing the bools for top, right, down & left, and the number of walls
         // This tuple is a placeholder
-        return (false, false, false, false, 0)
+        return (isWallUp, isWallRight, isWallDown, isWallLeft, numberOfWalls)
     }
 }
